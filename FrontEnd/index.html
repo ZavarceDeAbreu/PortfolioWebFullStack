@@ -8,8 +8,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- CSS -->
+    <!-- Template Main CSS file-->
     <link href="assets/css/style.css" rel="stylesheet" />
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+    <!--  Library -->
+    <script
+      src="https://kit.fontawesome.com/5b17ae309e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
 
     <title>Dayanna Zavarce</title>
   </head>
@@ -17,14 +28,8 @@
     <main>
       <!-- ------- header------- -->
       <header class="header">
-        <div class="container">
-          <div class="logo">
-            <a href="index.html"
-              ><img
-                src="/FrontEnd/assets/img/logo.png"
-                alt="logo con las letras Z y D"
-            /></a>
-          </div>
+        <nav class="container">
+          <a href="index.html" class="logo">Zavarce<spam>Dayanna.</spam></a>
           <button class="menu-btn">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -46,42 +51,121 @@
               />
             </svg>
           </button>
-          <nav class="menu">
-              <a href="index.html">INICIO</a>
-              <a href="#about">SOBRE MI</a>
-              <a href="#education">EDUCACION</a>
-              <a href="#portfolio">PORTAFOLIO</a>
-              <a href="#contact">CONTACTO</a>
-            
-          </nav>
-        </div>
-      </header>
+          <div class="navigation">
+            <ul>
+              <li><a href="#inicio" class="nav-link">inicio </a></li>
+              <li><a href="#sobremi" class="nav-link">sobre mi</a></li>
+              <li><a href="#educacion" class="nav-link">educación</a></li>
+              <li><a href="#portafolio" class="nav-link">portafolio</a></li>
+              <li><a href="#contacto" class="nav-link">contacto</a></li>
+              
+            </ul>
+            <a href="#" class="nav-link">ingresar</a>
+            <i class="fa-solid fa-moon toggle-btn"></i>
+            </div>
 
-      <section id="hero" class="hero">
-        <div class="hero-content">
-          <div class="hero-image" style="--image:">
-            <h1>Hola, mi nombre 
-              es <b>Dayanna</b><span>.</span></h1>
-            <svg xmlns="http://www.w8.org/2000/svg" viewBox="0 0 22.93 22.93">
-              <polygon fill="#aadcec" points="0 8.18 14.75 22.93 22.74 22.93 0 0.19 0 8.18"/>
-              <polygon fill="#aadcec" points="22.93 8.37 22.93 0.38 22.56 0 14.56 0 22.93 8.37"/>
-              </svg>
+          </nav>
+        </section>
+        
+      </header>
+      <section id="inicio"class="hero">
+        <div class="container">
+          <div class="hero-text">
+            <h3 class="sub-title">Hola, me llamo</h3>
+            <h1 class="title">Dayanna Zavarce<span>.</span></h1>
+            <p class="text">Soy Desarrolladora Java</p>
+            <div class="ctame">
+              <a href="mailto:dnayanna.zavarce@gmail.com" class="btn">Contactame</a>
+              <a href="./assets/pdf/cv.pdf" class="btn btn-secondary">download cv</a>
+            </div>
+          </div>
+          <div>
+            <img
+              class="hero-avatar"
+              src="assets/img/example-17.svg"
+              alt="Avatar"
+            />
           </div>
         </div>
       </section>
-      <section id="about" class="about">
-        <h1>About</h1>
+
+      <section id="sobremi" class="about section">
+        <img src="assets/img/path2.png" alt="forma abstracta" class="bg-image">
+        <div class="container">
+          <div class="fotoPerfil" data-aos="fade-right">
+            <img
+              src= "assets/img/1650057046853-removebg-preview.png"
+              alt= "imagen animada de dayanna"
+            />
+          </div>
+          <aside class="about-info" data-aos="fade-left">
+            <h3 class="sub-title">Sobre mi</h3>
+            <h2 class="title">Dayanna Zavarce</h2>
+            <p class="text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem minima optio eveniet ipsum, modi autem ad praesentium alias necessitatibus quod distinctio accusamus facilis molestias? Non est ratione quas exercitationem nisi.
+            </p>
+            <!-- <ul>
+              <li><i class="fa-brands fa-github"></i><a href=""></a></li>
+              <li><i class="fa-brands fa-linkedin"></i></a><a href=""></a></li>
+            </ul> -->
+          </aside>
+        </div>
       </section>
 
-      <section id="education" class="education">
-        <h1>education</h1>
+      <section id="educaticion" class="education section">
+        <div class="container">
+          <article class="skill-box">
+            <div class="box-headng">
+              <h3 class="sub-title">Educación</h3>
+              <h2 class="title">Mis habilidades</h2>
+              <div class="box-desc">
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae consectetur, sint maxime veritatis esse vel perspiciatis alias illo laudantium nisi repellendus voluptate, ea quod, omnis soluta assumenda quo quibusdam. Voluptatem.</p>
+                <a href="" class="btn">Hire Me</a>
+              </div>
+              <article class="skill-wrap">
+                <div class="skill">
+                  <div class="sk-progress">
+                  <svg>
+                    <circle cx="75" cy="75"r="68" />
+                  </svg>
+                    <h3 class="counter">html <span>85</span></h3>
+                  </div>
+                </div>
+                <div class="skill">
+                  <div class="sk-progress">
+                  <svg>
+                    <circle cx="75" cy="75" r="68" />
+                  </svg>
+                    <h3 class="counter">Java <span>85</span></h3>
+                  </div>
+                </div>
+                <div class="skill">
+                  <div class="sk-progress">
+                  <svg>
+                    <circle cx="75" cy="75" r="68" />
+                  </svg>
+                    <h3 class="counter">SQL <span>85</span></h3>
+                  </div>
+                </div>
+                <div class="skill">
+                  <div class="sk-progress">
+                  <svg>
+                    <circle cx="75" cy="75" r="68" />
+                  </svg>
+                    <h3 class="counter">JS <span>85</span></h3>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </article>
+        </div>
       </section>
 
-      <section id="portfolio" class="portfolio">
+      <section id="portafolio" class="portfolio">
         <h1>portfolio</h1>
       </section>
 
-      <section id="contact" class="contact">
+      <section id="contacto" class="contact">
         <h1>contact</h1>
       </section>
 
@@ -103,12 +187,16 @@
                 target="_blank"
                 ><i class="fa fa-linkedin" aria-hidden="true"></i
               ></a>
+               <a href="https://iradesign.io">Illustrations by IRA Design</a> 
             </li>
           </ul>
         </div>
       </footer>
     </main>
-    
+    <!-- Vendor JS Fles -->
+    <script src="assets/vendor/aos/aos.js "></script>
+
+    <!-- Template Main JS File -->
     <script src="/FrontEnd/assets/Js/script.js"></script>
   </body>
 </html>
