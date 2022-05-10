@@ -44,8 +44,17 @@ let sr = ScrollReveal({
 });
 sr.reveal(".hero-text" , {display:600});
 sr.reveal(".hero-avatar" , {origin:"top" , display:700});
-/*---------Skill Bar-------------*/
+/*---------Skill Bar Animation-------------*/
 
 
+/*---------Portfolio Filter Animation-------------*/
 
+let mixer = mixitup(".portfolio-gallery", {
+  selectors: {
+    target: '.ptr-card'
+},
+animation: {
+    duration: 300
+},
+});
  

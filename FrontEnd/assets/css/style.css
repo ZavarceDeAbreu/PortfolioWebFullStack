@@ -7,6 +7,7 @@
 */
 /* ------ 1 Custom Properties ------ */
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
 :root {
   --hue-1: 257;
   --hue-2: 47;
@@ -17,10 +18,12 @@
 
   --box-shadow: 0px 10px 20px rgba(57, 56, 61, 0.205);
   --bg: #f4f9fc;
+  --bg-transparent: rgba(244, 249, 252, 0.6);
   --gray-color: #ccc;
   --line: #6000cb;
   --line-dark: hsl(268, 100%, 35%);
   --fill: #aadcec;
+  --fill-dark: hsl(193, 44%, 74%);
   --text: #0f1b61;
   --subtext: #73bbc5;
   --duo: #105d67;
@@ -47,6 +50,7 @@ body.dark {
   margin: 0;
   padding: 0;
 }
+
 html {
   box-sizing: border-box;
   color: var(--text);
@@ -56,28 +60,34 @@ html {
   font-size: 16px;
   scroll-behavior: smooth;
 }
+
 body {
   background-color: var(--bg);
   margin: 0 20px;
   min-height: calc(100vh - 40px);
   overflow-x: hidden;
 }
+
 a {
   color: var(--duo);
   text-decoration: none;
   transition: all 0.5s ease-out;
 }
+
 a:hover {
   opacity: 0.9;
 }
+
 *,
 :after,
 :before {
   box-sizing: inherit;
 }
+
 main:focus {
   outline: none;
 }
+
 html:after,
 html:before {
   background: #fff;
@@ -90,12 +100,15 @@ html:before {
   will-change: top left;
   z-index: 21000;
 }
+
 html:before {
   left: 0;
 }
+
 html:after {
   right: 0;
 }
+
 body:after,
 body:before {
   content: "";
@@ -108,41 +121,52 @@ body:before {
   background: #fff;
   z-index: 20040;
 }
+
 body:before {
   top: 0;
 }
+
 body:after {
   bottom: 0;
 }
+
 body.lock-scroll,
 html.lock-scroll {
   overflow: hidden;
 }
+
 button svg path {
   fill: var(--line);
 }
+
 h2 {
   font-family: Bitter, serif;
   margin: 0;
   font-size: 1.5rem;
 }
+
 h3 {
   font-size: 1rem;
 }
+
 i {
   color: var(--line);
 }
-img{
+
+img {
   vertical-align: middle;
   max-width: 100%;
   height: auto;
 }
+
 p {
   line-height: 1.6;
 }
+
 li {
   list-style: none;
 }
+
 /* ------ 3 Components ------ */
 /*Menu*/
 .navigation {
@@ -156,11 +180,13 @@ li {
   align-items: center;
   justify-content: space-between;
 }
+
 .navigation ul {
   padding: 0;
   width: 100%;
   align-items: center;
 }
+
 .nav-link {
   position: relative;
   display: inline-block;
@@ -173,10 +199,12 @@ li {
   transition: 0.3s;
   opacity: 0.9;
 }
+
 .navigation a:hover {
   font-weight: 700;
   text-shadow: -2px 1px 0 var(--bg);
 }
+
 .nav-link::after {
   background-color: var(--fill);
   border-radius: 5px;
@@ -190,10 +218,12 @@ li {
   width: 100%;
   z-index: -1;
 }
+
 .nav-link:hover::after {
   width: 100%;
   opacity: 0.5;
 }
+
 .navigation.is-active {
   align-items: center;
   display: flex;
@@ -209,6 +239,7 @@ li {
   top: 0;
   width: 100%;
 }
+
 .menu-btn {
   color: var(--line);
   cursor: pointer;
@@ -217,6 +248,7 @@ li {
   outline: 0;
   z-index: 999;
 }
+
 /*Hero-Text*/
 .sub-title {
   border-left: 3px solid var(--line);
@@ -227,6 +259,7 @@ li {
   padding: 0.13rem 0.75rem;
   text-transform: uppercase;
 }
+
 .title {
   font-family: "Abril Fatface", cursive;
   font-size: 3em;
@@ -234,15 +267,18 @@ li {
   line-height: 1.2;
   text-transform: capitalize;
 }
+
 .text {
   font-size: 1rem;
   margin: 2rem 0;
   line-height: 2.3;
 }
+
 @media screen and (min-width: 1024px) {
   .menu-btn {
     display: none;
   }
+
   .navigation {
     position: static;
     width: auto;
@@ -250,13 +286,16 @@ li {
     opacity: 1;
     pointer-events: auto;
   }
+
   .navigation ul {
     display: flex;
   }
+
   .navigation a {
     margin: 0 1rem;
   }
 }
+
 /* ********** ProgressBar ********** */
 .header.scroll {
   top: 0;
@@ -267,23 +306,28 @@ li {
   align-items: center;
   padding: 5px;
 }
+
 progress::-webkit-progress-bar {
   background-color: var(--gray-color);
 }
+
 progress::-webkit-progress-value {
   background-color: var(--gray-dark-color);
 }
+
 progress::-moz-progress-bar {
   background-color: var(--gray-dark-color);
 }
+
 .progress {
   margin: 1rem auto;
 }
 
 /* ------ 4 Utilities ------ */
-.section{
+.section {
   position: relative;
 }
+
 .container {
   margin: 0 auto;
   padding: 0 2em;
@@ -291,7 +335,8 @@ progress::-moz-progress-bar {
   width: 100%;
   height: 100vh;
 }
-.bg-image{
+
+.bg-image {
   width: 100%;
   height: 90%;
   position: absolute;
@@ -299,9 +344,11 @@ progress::-moz-progress-bar {
   z-index: -1;
   /* filter: blur(3px);  */
 }
+
 .box-shadow-1 {
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25);
 }
+
 .btn {
   background-color: var(--line);
   border-radius: 17px;
@@ -315,9 +362,11 @@ progress::-moz-progress-bar {
   transition: 0.3s;
   z-index: 2;
 }
+
 .btn:hover {
   background-color: var(--line-dark);
 }
+
 .btn.btn-secondary {
   background-color: transparent;
   color: var(--line);
@@ -328,6 +377,7 @@ progress::-moz-progress-bar {
   padding: 0.15rem 0;
   position: relative;
 }
+
 .btn.btn-secondary::before {
   background-color: var(--line);
   bottom: -2.5px;
@@ -338,9 +388,11 @@ progress::-moz-progress-bar {
   transition: 0.3s ease-in-out;
   width: 0%;
 }
+
 .btn.btn-secondary:hover::before {
   width: 100%;
 }
+
 .section-title {
   border-top: thin solid var(--line);
   border-bottom: thin solid var(--line);
@@ -350,18 +402,23 @@ progress::-moz-progress-bar {
   text-align: center;
   color: var(--text);
 }
+
 .text-first-color {
   color: var(--text);
 }
+
 .text-center {
   text-align: center;
 }
+
 .text-left {
   text-align: left;
 }
+
 .text-right {
   text-align: right;
 }
+
 .toggle-btn {
   color: var(--text);
   min-width: 40px;
@@ -374,33 +431,42 @@ progress::-moz-progress-bar {
   cursor: pointer;
   transition: 0.3s;
 }
+
 .toggle-btn:hover {
   filter: brightness(97%);
 }
+
 .none {
   display: none;
 }
+
 @media screen and (min-width: 1024px) {
   .full-lg-screen {
     width: 100%;
     min-height: 100vh;
   }
+
   .text-lg-center {
     text-align: center;
   }
+
   .text-lg-left {
     text-align: left;
   }
+
   .text-lg-right {
     text-align: right;
   }
+
   .row {
     display: inline;
   }
+
   .none {
     display: none;
   }
 }
+
 /* ------ 5 Site Styles ------*/
 /*header*/
 .header {
@@ -412,12 +478,14 @@ progress::-moz-progress-bar {
   transition: 0.3s;
   align-items: center;
 }
-.header > .container {
+
+.header>.container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height:auto;
+  height: auto;
 }
+
 .logo {
   font-family: "Abril Fatface", cursive;
   color: var(--text);
@@ -427,9 +495,11 @@ progress::-moz-progress-bar {
   margin-right: 1.5rem;
   z-index: 210000;
 }
+
 .logo spam {
   color: var(--line);
 }
+
 /*hero*/
 .hero .container {
   align-items: center;
@@ -437,93 +507,113 @@ progress::-moz-progress-bar {
   grid-template-columns: repeat(2, 1fr);
   height: 90vh;
 }
+
 .hero .sub-title {
   margin-bottom: 0.7rem;
 }
+
 .hero .title {
   font-size: 3.5rem;
 }
+
 .hero .text {
   font-size: 1.5rem;
   margin: 0.8rem 0;
 }
+
 .hero-text span {
   color: var(--duo);
 }
+
 .ctame {
   margin-top: 3.5rem;
   display: flex;
   align-items: center;
 }
+
 .ctame .btn {
   margin-right: 1.5rem;
 }
+
 .hero-avatar {
   position: relative;
   width: 100%;
   transform: traslateX(-50%);
 }
+
 /*About*/
-.about .container{
+.about .container {
   display: grid;
   grid-template-columns: 1.05fr 1fr;
   align-items: center;
 }
-.about.aside{
+
+.about.aside {
   align-content: center;
 }
-.about .text{
+
+.about .text {
   margin: 2rem 0 4rem;
 }
-.about-info{
+
+.about-info {
   align-items: center;
 }
+
 .fotoPerfil {
   align-items: center;
-  
+
 }
+
 /*------ Education Section ------*/
-.skill{
-  overflow:hidden;
+.skill {
+  overflow: hidden;
 }
-.skill-box{
+
+.skill-box {
   background-color: #ffffff;
   padding: 5rem 6rem;
   border-radius: 20px;
   width: 100%;
 }
+
 .box-desc {
   display: grid;
   grid-template-columns: 1fr auto;
   align-items: center;
   column-gap: 2rem;
 }
-.skill-wrap{
+
+.skill-wrap {
   display: grid;
   grid-template-columns: repeat(4, 150px);
   margin-top: 2rem;
   justify-content: space-between;
 }
-.skill{
-  display:flex;
+
+.skill {
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.sk-progress{
+
+.sk-progress {
   width: 150px;
   height: 150px;
   position: relative;
 }
-.sk-progress svg{
+
+.sk-progress svg {
   position: absolute;
   width: 100%;
   height: 100%;
   top: 50%;
-  left:50%;
+  left: 50%;
   transform: translate(-50%, -50%) rotate(-90deg);
 }
-.sk-progress svg circle{
+
+.sk-progress svg circle {
   fill: var(--bg);
   stroke-width: 5px;
   stroke: var(--line);
@@ -531,7 +621,8 @@ progress::-moz-progress-bar {
   stroke-dasharray: 427;
   stroke-dashoffset: 427;
 }
-.counter{
+
+.counter {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -539,32 +630,161 @@ progress::-moz-progress-bar {
   z-index: 1;
   color: var(--line);
   font-weight: 600;
-  font-size:1.5rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
 }
-.counter span{
-  display:none;
+
+.counter span {
+  display: none;
 }
-.counter span:hover{
+
+.counter span:hover {
   display: list-item;
 }
+
+.progress-bar {
+  left: 100%;
+  border-top-right-radius: 80px;
+  border-bottom-right-radius: 80px;
+  border-left: 0;
+  -webkit-transform-origin: center left;
+  transform-origin: center left;
+}
+
+/*---------------Portfolio Section------------*/
+.portfolio-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+
+.portfolio-title {
+  padding-bottom: 1rem;
+}
+
+.filter-btn {
+  display: inline-block;
+  color: var(--text);
+  text-transform: uppercase;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  margin-left: 1.3rem;
+}
+
+.portfolio-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
+.prt-card {
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: #ffffff;
+  height: 265px;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+.prt-image {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.prt-image img{
+  width: 100%;
+}
+.prt-desc {
+  padding: 1.1rem 1.6rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.prt-desc {
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.btn.btn.btn-secondary.sm{
+  padding: 0.07rem 0.1rem;
+  font-size: 0.78rem;
+  border-bottom-width: 2px;
+}
+
+.btn.btn.btn-secondary.sm::before{
+  height: 2px;
+  bottom: -2px;
+}
+
+.prt-overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  backdrop-filter: blur(0px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.prt-image:hover .prt-overlay {
+  pointer-events: auto;
+  background-color: var(--bg-transparent);
+  backdrop-filter: blur(5px);
+
+}
+
+.prt-icon{
+  margin: 0 0.4rem;
+  background-color: var(--fill);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  transform: translateY(15px);
+  opacity: 0;
+  cursor: pointer;
+}
+
+.prt-icon:hover{
+background-color: var(--fill-dark);
+}
+
+.prt-image:hover .prt-icon{
+  opacity: 1;
+  transform: translateY(0px);
+}
+
 @font-face {
   font-family: "Bitter";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/bitter/v25/rax8HiqOu8IVPmn7cYxpPDk.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/bitter/v25/rax8HiqOu8IVPmn7cYxpPDk.woff2) format("woff2");
   unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
     U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
+
 @font-face {
   font-family: "Bitter";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/bitter/v25/rax8HiqOu8IVPmn7cYxpPDk.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/bitter/v25/rax8HiqOu8IVPmn7cYxpPDk.woff2) format("woff2");
   unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
     U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
