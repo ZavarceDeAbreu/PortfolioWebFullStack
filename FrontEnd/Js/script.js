@@ -11,7 +11,7 @@
 AOS.init({
   duration: 1000,
   easing: "ease-in-out-back",
-  // once: true
+  once: true
 });
 /*------Sticky Navigation------*/
 window.addEventListener("scroll", function () {
@@ -48,13 +48,12 @@ sr.reveal(".hero-avatar" , {origin:"top" , display:700});
 
 
 /*---------Portfolio Filter Animation-------------*/
-
 let mixer = mixitup(".portfolio-gallery", {
   selectors: {
-    target: '.ptr-card'
-},
-animation: {
-    duration: 300
-},
+      target: '.prt-card'
+  },
+  animation: {
+      duration: 500,
+  },
 });
  

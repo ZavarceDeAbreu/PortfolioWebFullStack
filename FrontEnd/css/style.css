@@ -9,20 +9,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@300;400;500;600;700;800&display=swap");
 
 :root {
-  --hue-1: 257;
-  --hue-2: 47;
-  --main-color-1: hsl(var(--hue-1), 100%, 60%);
-  --main-color-dark-1: hsl(var(--hue-1), 69%, 50%);
-  --main-color-2: hsl(var(--hue-2), 100%, 61%);
-  --main-color-dark-2: hsl(var(--hue-2), 82%, 55%);
-
   --box-shadow: 0px 10px 20px rgba(57, 56, 61, 0.205);
-  --bg: #f4f9fc;
+  --light:rgb(255, 255, 255);
+  --bg: rgb(244, 249, 252);
   --bg-transparent: rgba(244, 249, 252, 0.6);
   --gray-color: #ccc;
-  --line: #6000cb;
+  --line: rgb(96, 0, 203);
   --line-dark: hsl(268, 100%, 35%);
-  --fill: #aadcec;
+  --fill:rgb(170, 220, 236);
   --fill-dark: hsl(193, 44%, 74%);
   --text: #0f1b61;
   --subtext: #73bbc5;
@@ -90,7 +84,7 @@ main:focus {
 
 html:after,
 html:before {
-  background: #fff;
+  background: var(--light);
   backface-visibility: hidden;
   content: "";
   height: 100%;
@@ -118,7 +112,7 @@ body:before {
   left: 0;
   width: 100%;
   height: 20px;
-  background: #fff;
+  background: var(--light);
   z-index: 20040;
 }
 
@@ -302,9 +296,10 @@ li {
   height: auto;
   box-shadow: var(--box-shadow);
   transition: background 1s ease;
-  background: #ffffff;
+  background: var(--light);
   align-items: center;
   padding: 5px;
+  
 }
 
 progress::-webkit-progress-bar {
@@ -562,7 +557,6 @@ progress::-moz-progress-bar {
 
 .fotoPerfil {
   align-items: center;
-
 }
 
 /*------ Education Section ------*/
@@ -571,7 +565,7 @@ progress::-moz-progress-bar {
 }
 
 .skill-box {
-  background-color: #ffffff;
+  background-color: var(--light);
   padding: 5rem 6rem;
   border-radius: 20px;
   width: 100%;
@@ -611,6 +605,7 @@ progress::-moz-progress-bar {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(-90deg);
+  
 }
 
 .sk-progress svg circle {
@@ -681,14 +676,17 @@ progress::-moz-progress-bar {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 1rem;
 }
+
 .prt-card {
   border-radius: 15px;
   overflow: hidden;
-  background-color: #ffffff;
+  background-color: var(--light);
   height: 265px;
   display: grid;
   grid-template-rows: 1fr auto;
+  box-shadow: var(--box-shadow);
 }
+
 .prt-image {
   position: relative;
   overflow: hidden;
@@ -697,9 +695,11 @@ progress::-moz-progress-bar {
   justify-content: center;
   cursor: pointer;
 }
-.prt-image img{
+
+.prt-image img {
   width: 100%;
 }
+
 .prt-desc {
   padding: 1.1rem 1.6rem;
   display: flex;
@@ -712,18 +712,18 @@ progress::-moz-progress-bar {
   text-transform: capitalize;
 }
 
-.btn.btn.btn-secondary.sm{
+.btn.btn.btn-secondary.sm {
   padding: 0.07rem 0.1rem;
   font-size: 0.78rem;
   border-bottom-width: 2px;
 }
 
-.btn.btn.btn-secondary.sm::before{
+.btn.btn.btn-secondary.sm::before {
   height: 2px;
   bottom: -2px;
 }
 
-.prt-overlay{
+.prt-overlay {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -742,10 +742,9 @@ progress::-moz-progress-bar {
   pointer-events: auto;
   background-color: var(--bg-transparent);
   backdrop-filter: blur(5px);
-
 }
 
-.prt-icon{
+.prt-icon {
   margin: 0 0.4rem;
   background-color: var(--fill);
   border-radius: 50%;
@@ -760,11 +759,11 @@ progress::-moz-progress-bar {
   cursor: pointer;
 }
 
-.prt-icon:hover{
-background-color: var(--fill-dark);
+.prt-icon:hover {
+  background-color: var(--fill-dark);
 }
 
-.prt-image:hover .prt-icon{
+.prt-image:hover .prt-icon {
   opacity: 1;
   transform: translateY(0px);
 }
