@@ -61,7 +61,10 @@ body {
   min-height: calc(100vh - 40px);
   overflow-x: hidden;
 }
-
+body.stopScrolling {
+  height: 100%;
+  overflow: hidden;
+}
 a {
   color: var(--duo);
   text-decoration: none;
@@ -645,6 +648,9 @@ progress::-moz-progress-bar {
 }
 
 /*---------------Portfolio Section------------*/
+.porfolio .container{
+  transition: 0.4s;
+}
 .portfolio-header {
   display: flex;
   align-items: flex-end;
@@ -785,6 +791,7 @@ progress::-moz-progress-bar {
   left: 0;
   background-color: rgba(0, 0, 0, 0.85);
   opacity: 0;
+  transition: 0.3s;
 }
 
 .slider-wrap {
@@ -799,6 +806,7 @@ progress::-moz-progress-bar {
   align-items: center;
   justify-items: center;
   opacity: 0;
+  transition: 0.2s;
 }
 
 .slider-wrap img {
@@ -808,7 +816,6 @@ progress::-moz-progress-bar {
 }
 
 .navigation-arrow {
-  color:var(--fill);
   cursor: pointer;
   padding: 2rem;
 }
@@ -817,6 +824,22 @@ progress::-moz-progress-bar {
   display: block;
 }
 
+.portfolio.open .modal {
+  pointer-events: auto;
+}
+
+.portfolio.open .modal-overlay{
+  opacity: 1;
+}
+ .portfolio.open .container {
+   transform: scale(0.9);
+ }
+
+ .portfolio.open .slider-wrap{
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  transition: 0.45s 01.s;
+ }
 
 @font-face {
   font-family: "Bitter";
