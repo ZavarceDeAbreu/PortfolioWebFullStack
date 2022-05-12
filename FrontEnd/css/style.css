@@ -9,14 +9,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@300;400;500;600;700;800&display=swap");
 
 :root {
-  --box-shadow: 0px 10px 20px rgba(57, 56, 61, 0.205);
-  --light:rgb(255, 255, 255);
+  --box-shadow: 0px 5px 10px rgba(57, 56, 61, 0.205);
+  --light: rgb(255, 255, 255);
   --bg: rgb(244, 249, 252);
   --bg-transparent: rgba(244, 249, 252, 0.6);
   --gray-color: #ccc;
   --line: rgb(96, 0, 203);
   --line-dark: hsl(268, 100%, 35%);
-  --fill:rgb(170, 220, 236);
+  --fill: rgb(170, 220, 236);
   --fill-dark: hsl(193, 44%, 74%);
   --text: #0f1b61;
   --subtext: #73bbc5;
@@ -299,7 +299,6 @@ li {
   background: var(--light);
   align-items: center;
   padding: 5px;
-  
 }
 
 progress::-webkit-progress-bar {
@@ -474,7 +473,7 @@ progress::-moz-progress-bar {
   align-items: center;
 }
 
-.header>.container {
+.header > .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -605,7 +604,6 @@ progress::-moz-progress-bar {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(-90deg);
-  
 }
 
 .sk-progress svg circle {
@@ -768,12 +766,65 @@ progress::-moz-progress-bar {
   transform: translateY(0px);
 }
 
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 20800;
+  pointer-events: none;
+}
+
+.modal-overlay {
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  opacity: 0;
+}
+
+.slider-wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, calc(-50% + 400px));
+  width: 90%;
+  max-width: 900px;
+  display: grid;
+  grid-template-columns: 100px 1fr 100px;
+  align-items: center;
+  justify-items: center;
+  opacity: 0;
+}
+
+.slider-wrap img {
+  width: 100%;
+  display: none;
+  border-radius: 10px;
+}
+
+.navigation-arrow {
+  color:var(--fill);
+  cursor: pointer;
+  padding: 2rem;
+}
+
+.slider-wrap img.showImage {
+  display: block;
+}
+
+
 @font-face {
   font-family: "Bitter";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/bitter/v25/rax8HiqOu8IVPmn7cYxpPDk.woff2) format("woff2");
+  src: url(https://fonts.gstatic.com/s/bitter/v25/rax8HiqOu8IVPmn7cYxpPDk.woff2)
+    format("woff2");
   unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
     U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
@@ -783,7 +834,8 @@ progress::-moz-progress-bar {
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/bitter/v25/rax8HiqOu8IVPmn7cYxpPDk.woff2) format("woff2");
+  src: url(https://fonts.gstatic.com/s/bitter/v25/rax8HiqOu8IVPmn7cYxpPDk.woff2)
+    format("woff2");
   unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
     U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
