@@ -96,6 +96,12 @@ h3 {
   box-shadow: 0 8px 28px rgba(96, 0, 203, 0.25);
   kerning: auto;
 }
+
+.featurette-divider {
+  margin: 80px 70px; 
+  color: var(--subtext);
+}
+
 /* .bg-image {
   
   position: absolute;
@@ -236,7 +242,7 @@ h3 {
   left: 0;
   z-index: 997;
   transition: ALL 0.3s;
-  padding: 10px 0;
+  padding: 15px 0;
 }
 
 #header.header-scrolled {
@@ -259,7 +265,7 @@ h3 {
 
 @media (max-width: 991px) {
   #header {
-    padding: 12px 0;
+    padding: 5px 0;
   }
 }
 
@@ -543,37 +549,12 @@ h3 {
 # Education Section
 --------------------------------------------------------------*/
 /*------ Education Section ------*/
-.skill {
-  overflow: hidden;
-}
-
 .skill-box {
   background-color: var(--light);
-  padding: 5rem 6rem;
   border-radius: 20px;
   width: 100%;
 }
 
-.box-desc {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  align-items: center;
-  column-gap: 2rem;
-}
-
-.skill-wrap {
-  display: grid;
-  grid-template-columns: repeat(4, 150px);
-  margin-top: 2rem;
-  justify-content: space-between;
-}
-
-.skill {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
 
 .sk-progress {
   width: 150px;
@@ -591,7 +572,7 @@ h3 {
 }
 
 .sk-progress svg circle {
-  fill: var(--bg);
+  fill: var(--subtext);
   stroke-width: 5px;
   stroke: var(--line);
   stroke-linecap: round;
@@ -626,7 +607,7 @@ h3 {
   border-left: 0;
   -webkit-transform-origin: center left;
   transform-origin: center left;
-}
+} */
 
 /*---------------Portfolio Section------------*/
 .porfolio .container {
