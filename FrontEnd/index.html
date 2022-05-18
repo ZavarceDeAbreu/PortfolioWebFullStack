@@ -39,8 +39,9 @@
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">inicio </a></li>
           <li><a class="nav-link scrollto" href="#about">sobre mi</a></li>
-          <li><a class="nav-link scrollto" href="#educacion">educación</a></li>
+          <li><a class="nav-link scrollto" href="#education">educación</a></li>
           <li><a class="nav-link scrollto" href="#portafolio">portafolio</a></li>
+          <li><a class="nav-link scrollto" href="#experience">experience</a></li>
           <li><a class="nav-link scrollto" href="#contacto">contacto</a></li>
           <li><a class="getstarted" href="#">ingresar</a></li>
         </ul>
@@ -65,7 +66,7 @@
           </div>
         </div>
         <div class="col-lg-6 order-1 order-lg-2 hero-img">
-          <img class="img-fluid" src="assets/img/HeroImage.svg" alt="">
+          <img class="img-fluid mx-auto d-block" src="assets/img/HeroImage.svg" alt="">
         </div>
       </div>
     </div>
@@ -74,13 +75,13 @@
 
 
   <!-- ======= About Section ======= -->
-  <section id="about" class="about align-items-center">
+  <section id="about" class="about">
     <div class="container">
 
       <div class="row">
 
-        <div class="col-lg-6" data-aos="fade-right">
-          <img class="img-fluid" src="assets/img/about.png" alt="imagen animada de dayanna" />
+        <div class="col-lg-6  justify-content-center" data-aos="fade-right">
+          <img class="img-fluid mx-auto d-block" src="assets/img/about.png" alt="imagen animada de dayanna" />
         </div>
         <aside class="col-lg-6 pt-4 pt-lg-0 content align-content-center" data-aos="fade-left">
           <h3>Sobre mi</h3>
@@ -104,189 +105,360 @@
   <hr class="featurette-divider">
 
   <!-- ======= education Section ======= -->
-  <section id="educacion" class="education section">
+  <section id="education" class="education">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="section-title">
+            <h3>Educación</h3>
+            <h2>Mis habilidades</h2>
+          </div>
+          <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae consectetur,
+              sint
+              maxime veritatis esse vel perspiciatis alias illo laudantium nisi repellendus voluptate, ea quod,
+              omnis
+              soluta assumenda quo quibusdam. Voluptatem.</p>
+            <a class="btn" href="">Certificados</a>
+          </div>
+        </div>
+        <div class="col-lg-6 progress-content">
+          <div class="progress_bar">
+            <div class="pro-bar">
+              <small class="progress_bar_title">
+                Java
+                <span class="progress_number">89%</span>
+              </small>
+              <span class="progress-bar-inner" style="background-color: var(--line); width: 89%;" data-value="89"
+                data-percentage-value="89"></span>
+            </div>
+          </div>
+          <div class="progress_bar">
+            <div class="pro-bar">
+              <small class="progress_bar_title">
+                MySql
+                <span class="progress_number">90%</span>
+              </small>
+              <span class="progress-bar-inner" style="background-color: var(--line); width: 90%;" data-value="89"
+                data-percentage-value="89"></span>
+            </div>
+          </div>
+          <div class="progress_bar">
+            <div class="pro-bar">
+              <small class="progress_bar_title">
+                HTML5
+                <span class="progress_number">70%</span>
+              </small>
+              <span class="progress-bar-inner" style="background-color: var(--line); width: 70%;" data-value="89"
+                data-percentage-value="89"></span>
+            </div>
+          </div>
+          <div class="progress_bar">
+            <div class="pro-bar">
+              <small class="progress_bar_title">
+                JS
+                <span class="progress_number">60%</span>
+              </small>
+              <span class="progress-bar-inner" style="background-color: var(--line); width: 60%;" data-value="89"
+                data-percentage-value="89"></span>
+            </div>
+          </div>
+          <div class="progress_bar">
+            <div class="pro-bar">
+              <small class="progress_bar_title">
+                CSS
+                <span class="progress_number">70%</span>
+              </small>
+              <span class="progress-bar-inner" style="background-color: var(--line); width: 70%;" data-value="89"
+                data-percentage-value="89"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- Fin education Section -->
 
-    <div class="skill-box container">
+
+  <hr class="featurette-divider">
+
+  <!-- ======= portfolio Section ======= -->
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+
+      <div class="section-title ">
+        <h3>portafolio</h3>
+        <h2>Proyectos</h2>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12 d-flex justify-content-start">
+          <ul id="portfolio-flters">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-frontend">Front-end</li>
+            <li data-filter=".filter-backend">back-end</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row portfolio-container">
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-frontend">
+          <img src="assets/img/portafolio/1650057046853.jpg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>App 1</h4>
+            <p>App</p>
+            <a href="assets/img/portafolio/1650057046853.jpg" data-gallery="portfolioGallery"
+              class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-backend">
+          <img src="assets/img/portafolio/1650057046853.jpg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>App 1</h4>
+            <p>App</p>
+            <a href="assets/img/portafolio/1650057046853.jpg" data-gallery="portfolioGallery"
+              class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-backend">
+          <img src="assets/img/portafolio/1650057046853.jpg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>App 1</h4>
+            <p>App</p>
+            <a href="assets/img/portafolio/1650057046853.jpg" data-gallery="portfolioGallery"
+              class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-backend">
+          <img src="assets/img/portafolio/Captura web_13-5-2022_102111_localhost.jpeg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>App 1</h4>
+            <p>App</p>
+            <a href="assets/img/portafolio/Captura web_13-5-2022_102111_localhost.jpeg" data-gallery="portfolioGallery"
+              class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-backend">
+          <img src="assets/img/portafolio/WhatsApp Image 2022-05-10 at 2.09.07 PM.jpeg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>App 1</h4>
+            <p>App</p>
+            <a href="assets/img/portafolio/WhatsApp Image 2022-05-10 at 2.09.07 PM.jpeg" data-gallery="portfolioGallery"
+              class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-backend">
+          <img src="assets/img/portafolio/WhatsApp Image 2022-05-10 at 2.09.51 PM.jpeg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>App 1</h4>
+            <p>App</p>
+            <a href="assets/img/portafolio/WhatsApp Image 2022-05-10 at 2.09.51 PM.jpeg" data-gallery="portfolioGallery"
+              class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- Fin porfolio Section -->
+
+  <hr class="featurette-divider">
+
+  <!-- ======= experience Section ======= -->
+  <section id="experience" class="experience">
+    <div class="container" data-aos="fade-up">
+      <header class="section-title">
+        <h3>portafolio</h3>
+      </header>
+
+      <div class="experience-list d-flex flex-column-reverse" data-aso="fade-up" data-aos-delay="100">
+
+        <div class="collapse-div">
+          <div class="d-flex align-items-center">
+            <div data-bs-toggle="collapse" class="collapsed question" href="#experience1">puesto<i
+                class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                <div class="place">gran Sabana</div>
+            <div class="date ms-auto">mes/año-mes/año</div>
+          </div>
+          <div id="experience1" class="collapse" data-bs-parent=".experience-list">
+            <p>
+              Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida.
+              Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+            </p>
+          </div>
+        </div>
+
+        <div class="collapse-div">
+          <div class="d-flex align-items-center">
+            <div data-bs-toggle="collapse" href="#experience2" class="collapsed question">puesto<i
+                class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div class="place">empresa</div>
+            <div class="date ms-auto">mes/año-mes/año</div>
+          </div>
+          <div id="experience2" class="collapse" data-bs-parent=".experience-list">
+            <p>
+              Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec
+              ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit
+              ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+            </p>
+          </div>
+        </div>
+
+        <div class="collapse-div">
+          <div class="d-flex align-items-center">
+            <div data-bs-toggle="collapse" href="#experience3" class="collapsed question">puesto <i class="bi bi-chevron-down icon-show"></i>
+              <i class="bi bi-chevron-up icon-close"></i>
+            </div>
+            <div class="place">empresa</div>
+            <div class="date ms-auto">mes/año-mes/año</div>
+          </div>
+          <div id="experience3" class="collapse" data-bs-parent=".experience-list">
+            <p>
+              Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum
+              integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt.
+              Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+            </p>
+          </div>
+        </div>
+
+        <div class="collapse-div">
+          <div class="d-flex align-items-center">
+            <div data-bs-toggle="collapse" href="#experience4" class="collapsed question">puesto<i class="bi bi-chevron-down icon-show"></i><i
+                class="bi bi-chevron-up icon-close"></i></div>
+                <div class="place">empresa</div>
+            <div class="date ms-auto">mes/año-mes/año</div>
+          </div>
+          <div id="experience4" class="collapse" data-bs-parent=".experience-list">
+            <p>
+              Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec
+              ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit
+              ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+            </p>
+          </div>
+        </div>
+
+        <div class="collapse-div">
+          <div class="d-flex align-items-center">
+            <div data-bs-toggle="collapse" href="#experience5" class="collapsed question">puesto<i class="bi bi-chevron-down icon-show"></i><i
+                class="bi bi-chevron-up icon-close"></i></div>
+                <div class="place">empresa</div>
+            <div class="date ms-auto">mes/año-mes/año</div>
+          </div>
+          <div id="experience5" class="collapse" data-bs-parent=".experience-list">
+            <p>
+              Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel
+              risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida
+              quis blandit turpis cursus in
+            </p>
+          </div>
+        </div>
+
+        <div class="collapse-div">
+          <div class="d-flex align-items-center">
+            <div data-bs-toggle="collapse" href="#experience6" class="collapsed question">Puesto<i class="bi bi-chevron-down icon-show"></i><i
+                class="bi bi-chevron-up icon-close"></i></div>
+                <div class="place">empresa</div>
+            <div class="date ms-auto">mes/año-mes/año</div>
+          </div>
+          <div id="experience6" class="collapse" data-bs-parent=".experience-list">
+            <p>
+              Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc
+              vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in
+              metus vulputate eu scelerisque. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus
+              faucibus. Nibh tellus molestie nunc non blandit massa enim nec.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+  </section><!-- End F.A.Q Section -->
+
+
+  <hr class="featurette-divider">
+
+  <!-- ======= Contact Section ======= -->
+  <section id="contact" class="contact">
+    <div class="container">
 
       <div class="section-title">
-        <h3>Educación</h3>
-        <h2>Mis habilidades</h2>
-        <div class="d-flex bd-highlight">
-          <p class="p-2 w-100 bd-highlight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae consectetur, sint
-            maxime veritatis esse vel perspiciatis alias illo laudantium nisi repellendus voluptate, ea quod, omnis
-            soluta assumenda quo quibusdam. Voluptatem.</p>
-          <a class="align-self-center btn" href="" >Certificados</a>
-        </div>
+        <span>Contact</span>
+        <h2>Contact</h2>
+        <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>
       </div>
-        <div class="row">
-          <div class="col-lg-3 col-6 text-center">
-            <div class="sk-progress">
-                <svg>
-                  <circle cx="75" cy="75" r="68" />
-                </svg>
-              <h4 class="counter">html <span>85</span></h4>
-            </div>
-          </div>
-          <div class="col-lg-3 col-6 text-center">
-            <div class="sk-progress">
-              <svg>
-                <circle cx="75" cy="75" r="68" />
-              </svg>
-              <h4 class="counter">Java <span>85</span></h4>
-            </div>
-          </div>
-          <div class="col-lg-3 col-6 text-center">
-            <div class="sk-progress">
-              <svg>
-                <circle cx="75" cy="75" r="68" />
-              </svg>
-              <h4 class="counter">SQL <span>85</span></h4>
-            </div>
-          </div>
-          <div class="col-lg-3 col-6 text-center">
-            <div class="sk-progress">
-              <svg>
-                <circle cx="75" cy="75" r="68" />
-              </svg>
-              <h4 class="counter">JS <span>85</span></h4>
-            </div>
-          </div>
-        </div>
-        </article>
-      </div>
-  </section><!-- Fin Counts Section -->
 
+      <div class="row">
+
+        <div class="col-lg-5 d-flex align-items-stretch">
+          <div class="info">
+            <div class="address">
+              <i class="bi bi-geo-alt"></i>
+              <h4>Location:</h4>
+              <p>A108 Adam Street, New York, NY 535022</p>
+            </div>
+
+            <div class="email">
+              <i class="bi bi-envelope"></i>
+              <h4>Email:</h4>
+              <p>info@example.com</p>
+            </div>
+
+            <div class="phone">
+              <i class="bi bi-phone"></i>
+              <h4>Call:</h4>
+              <p>+1 5589 55488 55s</p>
+            </div>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+          </div>
+
+        </div>
+
+        <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <div class="row">
+              <div class="form-group col-md-6">
+                <label for="name">Your Name</label>
+                <input type="text" name="name" class="form-control" id="name" required>
+              </div>
+              <div class="form-group col-md-6 mt-3 mt-md-0">
+                <label for="name">Your Email</label>
+                <input type="email" class="form-control" name="email" id="email" required>
+              </div>
+            </div>
+            <div class="form-group mt-3">
+              <label for="name">Subject</label>
+              <input type="text" class="form-control" name="subject" id="subject" required>
+            </div>
+            <div class="form-group mt-3">
+              <label for="name">Message</label>
+              <textarea class="form-control" name="message" rows="10" required></textarea>
+            </div>
+            <div class="my-3">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+            </div>
+            <div class="text-center"><button type="submit">Send Message</button></div>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Contact Section -->
   <!--
-  <section id="portafolio" class="portfolio section">
-    <div class="modal">
-      <div class="modal-overlay"></div>
-      <div class="slider-wrap">
-        <div class="prev-btn navigation-arrow">
-          <i class="fa-solid fa-angle-left fa-lg"></i>
-        </div>
-        <div class="images">
-          <img src="assets/img/WhatsApp Image 2022-05-10 at 2.09.51 PM.jpeg" alt="">
-          <img src="assets/img/WhatsApp Image 2022-05-10 at 2.09.51 PM.jpeg" alt="">
-          <img src="assets/img/1650057046853.jpg" alt="">
-          <img src="assets/img/WhatsApp Image 2022-05-10 at 2.09.07 PM.jpeg" alt="">
-          <img src="assets/img/WhatsApp Image 2022-05-10 at 2.09.07 PM.jpeg" alt="">
-          <img src="assets/img/Captura web_13-5-2022_102111_localhost.jpeg" alt="">
-        </div>
-        <div class="next-btn navigation-arrow">
-          <i class="fa-solid fa-angle-right fa-lg"></i>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="portfolio-header">
-        <div class="porfolio-title">
-          <h3 class="sub-title">portafolio</h3>
-          <h1 class="title">Proyectos</h3>
-        </div>
-        <div class="filter-btns">
-          <botton class="filter-btn" data-filter="all">todos</botton>
-          <botton class="filter-btn" data-filter=".frontend">FrontEnd</botton>
-          <botton class="filter-btn" data-filter=".backend">backEnd</botton>
-        </div>
-      </div>
-      <div class="portfolio-gallery">
-        <div class="mix prt-card frontend">
-          <i class="btn-editar fa-regular fa-pen-to-square fa-lg"></i>
-          <div class="prt-image">
-            <img src="./assets/img/WhatsApp Image 2022-05-10 at 2.09.51 PM.jpeg" alt="">
-            <div class="prt-overlay">
-              <spam class="prt-icon zoom-icon">
-                <i class="fa-solid fa-plus fa-lg"></i>
-              </spam>
-              <a href="" class="prt-icon"><i class="fa-solid fa-link fa-lg"></i></a>
-            </div>
-          </div>
-          <div class="prt-desc">
-            <h3>Pagina web</h3>
-            <a href="" class="btn btn-secondary sm">Ir al Sitio</a>
-          </div>
-        </div>
-        <div class="mix prt-card backend">
-          <div class="prt-image">
-            <img src="./assets/img/WhatsApp Image 2022-05-10 at 2.09.51 PM.jpeg" alt="">
-            <div class="prt-overlay">
-              <spam class="prt-icon zoom-icon">
-                <i class="fa-solid fa-plus fa-lg"></i>
-              </spam>
-              <a href="" class="prt-icon"><i class="fa-solid fa-link fa-lg"></i></a>
-            </div>
-          </div>
-          <div class="prt-desc">
-            <h3>Pagina web</h3>
-            <a href="" class="btn btn-secondary sm">Ir al Sitio</a>
-          </div>
-        </div>
-        <div class="mix prt-card frontend">
-          <div class="prt-image">
-            <img src="./assets/img/1650057046853.jpg" alt="">
-            <div class="prt-overlay">
-              <spam class="prt-icon zoom-icon">
-                <i class="fa-solid fa-plus fa-lg"></i>
-              </spam>
-              <a href="" class="prt-icon">
-                <i class="fa-solid fa-link fa-lg"></i>
-              </a>
-            </div>
-          </div>
-          <div class="prt-desc">
-            <h3>Pagina web</h3>
-            <a href="" class="btn btn-secondary sm">Ir al Sitio</a>
-          </div>
-        </div>
-        <div class="mix prt-card frontend">
-          <div class="prt-image">
-            <img src="./assets/img/WhatsApp Image 2022-05-10 at 2.09.07 PM.jpeg" alt="">
-            <div class="prt-overlay">
-              <spam class="prt-icon zoom-icon">
-                <i class="fa-solid fa-plus fa-lg"></i>
-              </spam>
-              <a href="" class="prt-icon"><i class="fa-solid fa-link fa-lg"></i></a>
-            </div>
-          </div>
-          <div class="prt-desc">
-            <h3>Pagina web</h3>
-            <a href="" class="btn btn-secondary sm">Ir al Sitio</a>
-          </div>
-        </div>
-        <div class="mix prt-card backend">
-          <div class="prt-image">
-            <img src="./assets/img/WhatsApp Image 2022-05-10 at 2.09.07 PM.jpeg" alt="">
-            <div class="prt-overlay">
-              <spam class="prt-icon zoom-icon">
-                <i class="fa-solid fa-plus fa-lg"></i>
-              </spam>
-              <a href="" class="prt-icon"><i class="fa-solid fa-link fa-lg"></i></a>
-            </div>
-          </div>
-          <div class="prt-desc">
-            <h3>Pagina web</h3>
-            <a href="" class="btn btn-secondary sm">Ir al Sitio</a>
-          </div>
-        </div>
-        <div class="mix prt-card backend">
-          <div class="prt-image">
-            <img src="./assets/img/Captura web_13-5-2022_102111_localhost.jpeg" alt="">
-            <div class="prt-overlay">
-              <spam class="prt-icon zoom-icon">
-                <i class="fa-solid fa-plus fa-lg"></i>
-              </spam>
-              <a href="" class="prt-icon"><i class="fa-solid fa-link fa-lg"></i></a>
-            </div>
-          </div>
-          <div class="prt-desc">
-            <h3>Pagina web</h3>
-            <a href="" class="btn btn-secondary sm">Ir al Sitio</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <section id="contacto" class="contact">
     <h1>contact</h1>
   </section> -->
@@ -315,6 +487,7 @@
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/aos/aos.js "></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
   <!-- Template Main JS File -->
