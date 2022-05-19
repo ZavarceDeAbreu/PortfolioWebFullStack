@@ -40,9 +40,9 @@
           <li><a class="nav-link scrollto active" href="#hero">inicio </a></li>
           <li><a class="nav-link scrollto" href="#about">sobre mi</a></li>
           <li><a class="nav-link scrollto" href="#education">educación</a></li>
-          <li><a class="nav-link scrollto" href="#portafolio">portafolio</a></li>
+          <li><a class="nav-link scrollto" href="#portfolio">portafolio</a></li>
           <li><a class="nav-link scrollto" href="#experience">experience</a></li>
-          <li><a class="nav-link scrollto" href="#contacto">contacto</a></li>
+          <li><a class="nav-link scrollto" href="#contact">contacto</a></li>
           <li><a class="getstarted" href="#">ingresar</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -53,23 +53,28 @@
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
+
     <div class="container">
       <div class="row">
-        <div class="col-lg-6 pt-2 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-          <h3>Hola, me llamo</h3>
-          <h1>Dayanna Zavarce<span>.</span></h1>
-          <p>Soy Desarrolladora Java</p>
-          <div class="d-flex mt-3">
-            <a href="#about" class="btn-contact-me">Get Started</a>
-            <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i
+        <div
+          class="col-lg-6 d-lg-flex flex-lg-column justify-content-center align-items-stretch pt-5 pt-lg-0 order-2 order-lg-1 aos-init aos-animate"
+          data-aos="fade-up">
+          <div>
+            <h3>Hola, me llamo</h3>
+            <h1>Dayanna Zavarce<span>.</span></h1>
+            <p>Soy Desarrolladora Java</p>
+            <a href="#about" class="btn-contact-me">resumen</a>
+            <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn btn-watch-video"><i
                 class="bi bi-play-circle"></i><span>reproducir video</span></a>
           </div>
         </div>
-        <div class="col-lg-6 order-1 order-lg-2 hero-img">
-          <img class="img-fluid mx-auto d-block" src="assets/img/HeroImage.svg" alt="">
+        <div class="col-lg-6 d-lg-flex flex-lg-column align-items-stretch order-1 order-lg-2 hero-img"
+          data-aos="fade-up">
+          <img class="img-fluid" src="assets/img/HeroImage.svg" alt="">
         </div>
       </div>
     </div>
+
   </section><!-- Fin Hero -->
 
 
@@ -80,12 +85,15 @@
 
       <div class="row">
 
-        <div class="col-lg-6  justify-content-center" data-aos="fade-right">
+        <div class="col-lg-6 align-self-center" data-aos="fade-right">
           <img class="img-fluid mx-auto d-block" src="assets/img/about.png" alt="imagen animada de dayanna" />
         </div>
         <aside class="col-lg-6 pt-4 pt-lg-0 content align-content-center" data-aos="fade-left">
-          <h3>Sobre mi</h3>
-          <h2>Dayanna Zavarce</h2>
+          <div class="section-title">
+            <span>sobre mi</span>
+            <h2>sobre mi</h2>
+            <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>
+          </div>
           <p class="wow fadeInUp">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem minima optio eveniet ipsum, modi autem ad
             praesentium alias necessitatibus quod distinctio accusamus facilis molestias? Non est ratione quas
@@ -110,8 +118,9 @@
       <div class="row align-items-center">
         <div class="col-lg-6">
           <div class="section-title">
-            <h3>Educación</h3>
-            <h2>Mis habilidades</h2>
+            <span>Habilidades</span>
+            <h2>Habilidades</h2>
+            <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>
           </div>
           <div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae consectetur,
@@ -185,9 +194,9 @@
   <section id="portfolio" class="portfolio">
     <div class="container">
 
-      <div class="section-title ">
-        <h3>portafolio</h3>
-        <h2>Proyectos</h2>
+      <div class="section-title">
+        <span>Portafolio</span>
+        <h2>Portafolio</h2>
       </div>
 
       <div class="row">
@@ -202,69 +211,118 @@
 
       <div class="row portfolio-container">
 
-        <div class="col-lg-4 col-md-6 portfolio-item filter-frontend">
-          <img src="assets/img/portafolio/1650057046853.jpg" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>App 1</h4>
-            <p>App</p>
-            <a href="assets/img/portafolio/1650057046853.jpg" data-gallery="portfolioGallery"
-              class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
-            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+
+        <div class="col-lg-4 col-md-6  portfolio-item filter-backend">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portafolio/Captura web_13-5-2022_102111_localhost.jpeg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <div class="portfolio-info-content">
+                <h4>Walter White</h4>
+                <span>Chief Executive Officer</span>
+                <div class="portfolio-links">
+                  <a href="assets/img/portafolio/WhatsApp Image 2022-05-10 at 2.09.07 PM.jpeg"
+                    data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i
+                      class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" class="details-link" title="More Details"><i
+                      class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-backend">
-          <img src="assets/img/portafolio/1650057046853.jpg" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>App 1</h4>
-            <p>App</p>
-            <a href="assets/img/portafolio/1650057046853.jpg" data-gallery="portfolioGallery"
-              class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
-            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+          <div class="portfolio-wrap">
+            <img src="assets/img/portafolio/1650057046853.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <div class="portfolio-info-content">
+                <h4>Walter White</h4>
+                <span>Chief Executive Officer</span>
+                <div class="portfolio-links">
+                  <a href="assets/img/portafolio/1650057046853.jpg" data-gallery="portfolioGallery"
+                    class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" class="details-link" title="More Details"><i
+                      class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 col-md-6  portfolio-item filter-backend">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portafolio/WhatsApp Image 2022-05-10 at 2.09.07 PM.jpeg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <div class="portfolio-info-content">
+                <h4>Walter White</h4>
+                <span>Chief Executive Officer</span>
+                <div class="portfolio-links">
+                  <a href="assets/img/portafolio/WhatsApp Image 2022-05-10 at 2.09.07 PM.jpeg"
+                    data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i
+                      class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" class="details-link" title="More Details"><i
+                      class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6  portfolio-item filter-backend">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portafolio/WhatsApp Image 2022-05-10 at 2.09.07 PM.jpeg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <div class="portfolio-info-content">
+                <h4>Walter White</h4>
+                <span>Chief Executive Officer</span>
+                <div class="portfolio-links">
+                  <a href="assets/img/portafolio/WhatsApp Image 2022-05-10 at 2.09.07 PM.jpeg"
+                    data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i
+                      class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" class="details-link" title="More Details"><i
+                      class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-backend">
-          <img src="assets/img/portafolio/1650057046853.jpg" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>App 1</h4>
-            <p>App</p>
-            <a href="assets/img/portafolio/1650057046853.jpg" data-gallery="portfolioGallery"
-              class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
-            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+          <div class="portfolio-wrap">
+            <img src="assets/img/portafolio/WhatsApp Image 2022-05-10 at 2.09.07 PM.jpeg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <div class="portfolio-info-content">
+                <h4>Walter White</h4>
+                <span>Chief Executive Officer</span>
+                <div class="portfolio-links">
+                  <a href="assets/img/portafolio/WhatsApp Image 2022-05-10 at 2.09.07 PM.jpeg"
+                    data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i
+                      class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" class="details-link" title="More Details"><i
+                      class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-backend">
-          <img src="assets/img/portafolio/Captura web_13-5-2022_102111_localhost.jpeg" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>App 1</h4>
-            <p>App</p>
-            <a href="assets/img/portafolio/Captura web_13-5-2022_102111_localhost.jpeg" data-gallery="portfolioGallery"
-              class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
-            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-backend">
-          <img src="assets/img/portafolio/WhatsApp Image 2022-05-10 at 2.09.07 PM.jpeg" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>App 1</h4>
-            <p>App</p>
-            <a href="assets/img/portafolio/WhatsApp Image 2022-05-10 at 2.09.07 PM.jpeg" data-gallery="portfolioGallery"
-              class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
-            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-backend">
-          <img src="assets/img/portafolio/WhatsApp Image 2022-05-10 at 2.09.51 PM.jpeg" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>App 1</h4>
-            <p>App</p>
-            <a href="assets/img/portafolio/WhatsApp Image 2022-05-10 at 2.09.51 PM.jpeg" data-gallery="portfolioGallery"
-              class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
-            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+          <div class="portfolio-wrap">
+            <img src="assets/img/portafolio/WhatsApp Image 2022-05-10 at 2.09.07 PM.jpeg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <div class="portfolio-info-content">
+                <h4>Walter White</h4>
+                <span>Chief Executive Officer</span>
+                <div class="portfolio-links">
+                  <a href="assets/img/portafolio/WhatsApp Image 2022-05-10 at 2.09.07 PM.jpeg"
+                    data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i
+                      class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" class="details-link" title="More Details"><i
+                      class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -275,18 +333,21 @@
 
   <!-- ======= experience Section ======= -->
   <section id="experience" class="experience">
+    
     <div class="container" data-aos="fade-up">
-      <header class="section-title">
-        <h3>portafolio</h3>
-      </header>
+      
+      <div class="section-title">
+        <span>experiencia</span>
+        <h2>experiencia</h2>
+      </div>
 
-      <div class="experience-list d-flex flex-column-reverse" data-aso="fade-up" data-aos-delay="100">
+      <div class="experience-list d-flex" data-aso="fade-up" data-aos-delay="100">
 
         <div class="collapse-div">
           <div class="d-flex align-items-center">
             <div data-bs-toggle="collapse" class="collapsed question" href="#experience1">puesto<i
                 class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-                <div class="place">gran Sabana</div>
+            <div class="place">gran Sabana</div>
             <div class="date ms-auto">mes/año-mes/año</div>
           </div>
           <div id="experience1" class="collapse" data-bs-parent=".experience-list">
@@ -315,7 +376,8 @@
 
         <div class="collapse-div">
           <div class="d-flex align-items-center">
-            <div data-bs-toggle="collapse" href="#experience3" class="collapsed question">puesto <i class="bi bi-chevron-down icon-show"></i>
+            <div data-bs-toggle="collapse" href="#experience3" class="collapsed question">puesto <i
+                class="bi bi-chevron-down icon-show"></i>
               <i class="bi bi-chevron-up icon-close"></i>
             </div>
             <div class="place">empresa</div>
@@ -332,9 +394,9 @@
 
         <div class="collapse-div">
           <div class="d-flex align-items-center">
-            <div data-bs-toggle="collapse" href="#experience4" class="collapsed question">puesto<i class="bi bi-chevron-down icon-show"></i><i
-                class="bi bi-chevron-up icon-close"></i></div>
-                <div class="place">empresa</div>
+            <div data-bs-toggle="collapse" href="#experience4" class="collapsed question">puesto<i
+                class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div class="place">empresa</div>
             <div class="date ms-auto">mes/año-mes/año</div>
           </div>
           <div id="experience4" class="collapse" data-bs-parent=".experience-list">
@@ -348,9 +410,9 @@
 
         <div class="collapse-div">
           <div class="d-flex align-items-center">
-            <div data-bs-toggle="collapse" href="#experience5" class="collapsed question">puesto<i class="bi bi-chevron-down icon-show"></i><i
-                class="bi bi-chevron-up icon-close"></i></div>
-                <div class="place">empresa</div>
+            <div data-bs-toggle="collapse" href="#experience5" class="collapsed question">puesto<i
+                class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div class="place">empresa</div>
             <div class="date ms-auto">mes/año-mes/año</div>
           </div>
           <div id="experience5" class="collapse" data-bs-parent=".experience-list">
@@ -364,9 +426,9 @@
 
         <div class="collapse-div">
           <div class="d-flex align-items-center">
-            <div data-bs-toggle="collapse" href="#experience6" class="collapsed question">Puesto<i class="bi bi-chevron-down icon-show"></i><i
-                class="bi bi-chevron-up icon-close"></i></div>
-                <div class="place">empresa</div>
+            <div data-bs-toggle="collapse" href="#experience6" class="collapsed question">Puesto<i
+                class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div class="place">empresa</div>
             <div class="date ms-auto">mes/año-mes/año</div>
           </div>
           <div id="experience6" class="collapse" data-bs-parent=".experience-list">
@@ -393,10 +455,10 @@
     <div class="container">
 
       <div class="section-title">
-        <span>Contact</span>
-        <h2>Contact</h2>
-        <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>
+        <span>experiencia</span>
+        <h2>experiencia</h2>
       </div>
+
 
       <div class="row">
 
@@ -404,7 +466,7 @@
           <div class="info">
             <div class="address">
               <i class="bi bi-geo-alt"></i>
-              <h4>Location:</h4>
+              <h4>direccion:</h4>
               <p>A108 Adam Street, New York, NY 535022</p>
             </div>
 
@@ -416,11 +478,13 @@
 
             <div class="phone">
               <i class="bi bi-phone"></i>
-              <h4>Call:</h4>
-              <p>+1 5589 55488 55s</p>
+              <h4>telefono:</h4>
+              <p>+54 11 28060021</p>
             </div>
 
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d132768.03171723257!2d-58.986947752821!3d-34.49344458384778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9cb6643d2003%3A0xa8da0402f634b636!2sPilar%2C%20Provincia%20de%20Buenos%20Aires!5e1!3m2!1ses-419!2sar!4v1652935415137!5m2!1ses-419!2sar"
+              frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
           </div>
 
         </div>
@@ -463,25 +527,36 @@
     <h1>contact</h1>
   </section> -->
 
-  <footer>
-    <div class="container">
-      <small>
-        &copy; <span id="current-year">2022</span> Dayanna Zavarce
-      </small>
+  <footer id="footer">
 
-      <ul>
-        <li>
-          <a href="https://github.com/ZavarceDeAbreu" target="_blank"><i class="fa fa-github"
-              aria-hidden="true"></i></a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/dayanna-zavarce-de-abreu-979a58131/" target="_blank"><i
-              class="fa fa-linkedin" aria-hidden="true"></i></a>
-          <a href="https://iradesign.io">Illustrations by IRA Design</a>
-        </li>
-      </ul>
+    <div class="footer-top">
+
+      <div class="container">
+
+        <div class="row  justify-content-center">
+          <div class="col-lg-6">
+            <h3 class="logo">DN<span>ZDA.</span></h3>
+          </div>
+        </div>
+
+        <div class="social-links">
+          <a href="#" class="github"><i class="bi bi-github"></i></i></a>
+          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+
+      </div>
     </div>
-  </footer>
+
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+        &copy; Copyright <strong><span>DayannaZavarce</span></strong>.
+      </div>
+      <div class="credits">
+        <a href="https://iradesign.io">Illustrations by IRA Design</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
 
   <!-- Vendor JS Fles -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
